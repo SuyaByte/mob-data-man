@@ -1,0 +1,22 @@
+# Project Heart-beat:
+
+Implement a simple inter-process communication protocol that exchanges two control packets, Hello and Hello_Ack. (Refer to the example code shown in lecture note #5)
+- Suppose there are five nodes in a network, where each node is fully connected with others. Each node generates a Hello packet periodically by following inter-arrival time, i.e., exponential (5.0).
+- A sender node (in short, sender) transmits a Hello packet to a randomly chosen receiver node (in short, receiver). Upon receiving, the receiver replies to a Hello_Ack packet. If the sender receives the Hello_Ack packet, then the transmission is successful. Suppose it takes 0.2 seconds to transmit a packet over the network. A local processing delay before replying to Hello_Ack is 0.1 seconds.
+- A packet can be lost during the transmission because of an unreliable link quality. Suppose a set of packet loss probabilities is 0.1, 0.2, 0.3, 0.4, and 0.5. If the sender does not receive the Hello_Ack packet within a timeout period (2 seconds), it retransmits a Hello packet. If the sender still does not receive the Hello_Ack packet, the transmission fails.
+- Dump a snapshot of events (i.e., a packet loss probability is 0.3). Only one-page would be enough.
+For example,
+    ...
+    node.0 sends a Hello to node.3 at 100.2 seconds.
+    node.2 replies a Hello_Ack to node.1 at 100.5 seconds
+    ...
+    node.4 sends a Hello to node.3 at 110.5 seconds
+    node.1 receives a Hello_Ack from node.2 at 110.6 seconds
+    node.4 re-sends a Hello to node.3 at 112.5 seconds
+    ...
+- The simulation ends when the simulation time reaches 1000 seconds.
+- Draw two result graphs in terms of following performance metrics against the packet loss probabilities (0.1, 0.2, 0.3, 0.4, or 0.5).
+    Average number of successful transmissions
+    Average number of failed transmissions
+
+This project is implemented in the Linux Server of Texas Tech University (willow.cs.ttu.edu) using CSIM 20, a Development Toolkit for Simulation & Modeling.
