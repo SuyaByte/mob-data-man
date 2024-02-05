@@ -1,0 +1,71 @@
+             CSIM Simulation Report (Version 20.0 for Linux x86-64)
+
+                                   Heartbeat
+
+                           Fri Mar 10 12:29:24 2023
+
+
+                     Ending simulation time:      2000.359
+                     Elapsed simulation time:     2000.359
+                     CPU time used (seconds):        0.016
+
+
+FACILITY SUMMARY 
+
+facility     service    service          through-    queue     response   compl
+name           disc      time    util.     put       length      time     count
+--------------------------------------------------------------------------------
+network0_1   fcfs       0.20000  0.009    0.04749    0.00950    0.20000       95
+network0_2   fcfs       0.20000  0.009    0.04749    0.00950    0.20000       95
+network0_3   fcfs       0.20000  0.008    0.03849    0.00775    0.20130       77
+network0_4   fcfs       0.20000  0.003    0.01450    0.00290    0.20000       29
+network1_0   fcfs       0.20000  0.009    0.04599    0.00920    0.20000       92
+network1_2   fcfs       0.20000  0.009    0.04449    0.00890    0.20000       89
+network1_3   fcfs       0.20000  0.008    0.04099    0.00820    0.20000       82
+network1_4   fcfs       0.20000  0.003    0.01750    0.00350    0.20000       35
+network2_0   fcfs       0.20000  0.009    0.04749    0.00950    0.20000       95
+network2_1   fcfs       0.20000  0.009    0.04399    0.00880    0.20000       88
+network2_3   fcfs       0.20000  0.010    0.05199    0.01040    0.20000      104
+network2_4   fcfs       0.20000  0.004    0.01900    0.00380    0.20000       38
+network3_0   fcfs       0.20000  0.007    0.03649    0.00730    0.20000       73
+network3_1   fcfs       0.20000  0.008    0.03899    0.00780    0.20000       78
+network3_2   fcfs       0.20000  0.010    0.04999    0.01000    0.20000      100
+network3_4   fcfs       0.20000  0.004    0.01850    0.00370    0.20000       37
+network4_0   fcfs       0.20000  0.003    0.01550    0.00310    0.20000       31
+network4_1   fcfs       0.20000  0.004    0.02050    0.00410    0.20000       41
+network4_2   fcfs       0.20000  0.004    0.02150    0.00430    0.20000       43
+network4_3   fcfs       0.20000  0.004    0.02000    0.00400    0.20000       40
+cpu0         fcfs       0.10000  0.015    0.14797    0.01485    0.10034      296
+cpu1         fcfs       0.10000  0.015    0.14897    0.01490    0.10000      298
+cpu2         fcfs       0.10000  0.016    0.16247    0.01625    0.10000      325
+cpu3         fcfs       0.10000  0.014    0.14397    0.01440    0.10000      288
+cpu4         fcfs       0.10000  0.008    0.07749    0.00775    0.10000      155
+
+
+
+TABLE 1:  Response Times
+
+      minimum         0.600000          mean                    9.252502
+      maximum        51.733662          variance              106.942456
+      range          51.133662          standard deviation     10.341299
+      observations         582          coefficient of var      1.117676
+
+
+CSIM MODEL STATISTICS
+
+CPU time used (sec):         0.016 
+Events processed:             4506 
+Memory allocated:            95770 bytes 
+Calls to malloc:               251 
+Processes 
+     Started:                    6 
+     Saved:                   2767 
+     Terminated:                 5 
+     High water mark:            6 
+Stacks 
+     Allocated:                 11 
+     High water mark:          282 words 
+     Average:                   37 words 
+     Maximum:                   43 words 
+     Current:                   27 words 
+
